@@ -20,6 +20,7 @@ class MailMessage(models.Model):
     mail_tracking_ids = fields.One2many(
         comodel_name="mail.tracking.email",
         inverse_name="mail_message_id",
+        auto_join=True,
         string="Mail Trackings",
     )
     mail_tracking_needs_action = fields.Boolean(
@@ -216,6 +217,12 @@ class MailMessage(models.Model):
     @api.model
     def _drop_aliases(self, mail_list):
         aliases = self.env["mail.alias"].get_aliases()
+        if self.env.company.mail_tracking_show_aliases:
+            IrConfigParamObj = self.env["ir.config_parameter"].sudo()
+            aliases = "{}@{}".format(
+                IrConfigParamObj.get_param("mail.catchall.alias"),
+                IrConfigParamObj.get_param("mail.catchall.domain"),
+            )
 
         def _filter_alias(email):
             email_wn = getaddresses([email])[0][1]
@@ -284,7 +291,7 @@ class MailMessage(models.Model):
 
     @api.model
     def get_failed_count(self):
-        """ Gets the number of failed messages used on discuss mailbox item"""
+        """Gets the number of failed messages used on discuss mailbox item"""
         return self.search_count([("is_failed_message", "=", True)])
 
     @api.model

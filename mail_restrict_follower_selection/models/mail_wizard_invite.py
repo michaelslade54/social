@@ -13,7 +13,7 @@ class MailWizardInvite(models.TransientModel):
     @api.model
     def _mail_restrict_follower_selection_get_domain(self, res_model=None):
         if not res_model:
-            res_model = self.env.context.get('default_res_model')
+            res_model = self.env.context.get("default_res_model")
         parameter_name = "mail_restrict_follower_selection.domain"
         return (
             self.env["ir.config_parameter"]
