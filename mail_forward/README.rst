@@ -29,13 +29,28 @@ Mail Forward Message
 |badge1| |badge2| |badge3| |badge4| |badge5|
 
 This module allows users to forward messages from the chatter of any
-document to other users, adding them as followers of the document
-without notifying the current followers.
+document to:
+
+- Other users in the same thread, adding them as followers of the
+  document without notifying the current followers.
+- Another thread, but not adding them as followers—only notifying the
+  current followers of the other thread.
 
 **Table of contents**
 
 .. contents::
    :local:
+
+Configuration
+=============
+
+To enable a model to forward messages to another thread:
+
+- With debug mode activated, go to
+  ``Settings -> Technical -> Database Structure -> Models``.
+- Search for the model you wish to enable.
+- Mark the option ``Enable Forward To`` and save. Transient models or
+  those without mail thread won't have this check visible.
 
 Usage
 =====
@@ -47,9 +62,11 @@ To use this module, follow these steps:
   notes).
 - A Forward icon will appear next to the message.
 - Click the button to display a wizard with the message.
-- Select the users to forward the message to.
-- Click the 'Send Mail' button to send the message to the selected
-  users.
+- Select the forward type (current thread or another thread).
+- Select the users to forward the message to, or select the other thread
+  according to the previous step.
+- Click the 'Send Mail' button to send the message to the selected users
+  or thread.
 
 Bug Tracker
 ===========
@@ -88,6 +105,14 @@ This module is maintained by the OCA.
 OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
+
+.. |maintainer-carlos-lopez-tecnativa| image:: https://github.com/carlos-lopez-tecnativa.png?size=40px
+    :target: https://github.com/carlos-lopez-tecnativa
+    :alt: carlos-lopez-tecnativa
+
+Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
+
+|maintainer-carlos-lopez-tecnativa| 
 
 This module is part of the `OCA/social <https://github.com/OCA/social/tree/17.0/mail_forward>`_ project on GitHub.
 
