@@ -6,37 +6,39 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2025-01-25 15:06+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/models/mail_message.py:0
 #, python-format
 msgid "---------- Forwarded message ---------"
-msgstr ""
+msgstr "---------- Messaggio inoltrato ---------"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/models/mail_message.py:0
 #, python-format
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: mail_forward
 #: model:ir.model,name:mail_forward.model_mail_thread
 msgid "Email Thread"
-msgstr ""
+msgstr "Discussione e-mail"
 
 #. module: mail_forward
 #: model:ir.model,name:mail_forward.model_mail_compose_message
 msgid "Email composition wizard"
-msgstr ""
+msgstr "Procedura guidata creazione e-mail"
 
 #. module: mail_forward
 #. odoo-javascript
@@ -44,7 +46,7 @@ msgstr ""
 #: code:addons/mail_forward/static/src/core/common/message_actions.esm.js:0
 #, python-format
 msgid "Forward"
-msgstr ""
+msgstr "Inoltra"
 
 #. module: mail_forward
 #. odoo-javascript
@@ -54,65 +56,65 @@ msgstr ""
 #: code:addons/mail_forward/static/src/components/forward_message/forward_message.xml:0
 #, python-format
 msgid "Forward Message"
-msgstr ""
+msgstr "Inoltra messaggio"
 
 #. module: mail_forward
 #. odoo-javascript
 #: code:addons/mail_forward/static/src/components/forward_message/forward_message.xml:0
 #, python-format
 msgid "Forward Message Center"
-msgstr ""
+msgstr "Centro inoltro messaggio"
 
 #. module: mail_forward
 #. odoo-javascript
 #: code:addons/mail_forward/static/src/components/forward_message/forward_message.xml:0
 #, python-format
 msgid "Forward Message Left"
-msgstr ""
+msgstr "Inoltra messaggio precedente"
 
 #. module: mail_forward
 #. odoo-javascript
 #: code:addons/mail_forward/static/src/components/forward_message/forward_message.xml:0
 #, python-format
 msgid "Forward Message Right"
-msgstr ""
+msgstr "Inoltra messaggio successivo"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/models/mail_message.py:0
 #, python-format
 msgid "From"
-msgstr ""
+msgstr "Da"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/wizards/mail_compose_message.py:0
 #, python-format
 msgid "Fwd:"
-msgstr ""
+msgstr "In.:"
 
 #. module: mail_forward
 #: model:ir.model,name:mail_forward.model_mail_message
 msgid "Message"
-msgstr ""
+msgstr "Messaggio"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/wizards/mail_compose_message.py:0
 #, python-format
 msgid "Re:"
-msgstr ""
+msgstr "Re:"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/models/mail_message.py:0
 #, python-format
 msgid "Subject"
-msgstr ""
+msgstr "Oggetto"
 
 #. module: mail_forward
 #. odoo-python
 #: code:addons/mail_forward/models/mail_message.py:0
 #, python-format
 msgid "To"
-msgstr ""
+msgstr "A"
