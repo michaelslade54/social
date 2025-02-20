@@ -5,11 +5,13 @@
 from unittest.mock import patch
 
 from odoo.exceptions import ValidationError
-from odoo.tests import common, tagged
+from odoo.tests import tagged
+
+from odoo.addons.base.tests.common import BaseCommon
 
 
 @tagged("post_install", "-at_install")
-class DynamicListCase(common.TransactionCase):
+class DynamicListCase(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
